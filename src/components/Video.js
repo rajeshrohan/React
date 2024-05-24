@@ -1,21 +1,21 @@
-import './Video.css'
+import "./Video.css";
 
-function Video() {
-  let topic = "Alan Walker";
-  let description = "this song is produced and created by Alan Walker";
-  let bg = "dark";
+function Video({ title, channel="channel name", views, time }) {
   return (
     <>
-      <img
-        src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMGCNe2qDubR2f_Jyn2RfB3CP_eqTSViVJ7AWB_TEJKoGKLAi"
-        alt="Alan Walker img"
-      />
-
-      <div style={{ backgroundColor: "red", textAlign: "center" }}>
-        this is {topic} video component
+      <div className="container">
+        <img
+          className="img"
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUMGCNe2qDubR2f_Jyn2RfB3CP_eqTSViVJ7AWB_TEJKoGKLAi"
+          alt="Alan Walker img"
+        />
+        <div className="title">{title}</div>
+        <div className="channel">{channel}</div>
+        <div className="views">
+          {views} views <span></span>
+          {time}
+        </div>
       </div>
-
-      <div className={bg}>{description}</div>
     </>
   );
 }

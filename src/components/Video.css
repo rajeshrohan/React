@@ -4,3 +4,22 @@
     background-color: grey;
     color: white;
 }
+.container{
+    width: 15em;
+    margin: 0 0.2em;
+    float: left;
+}
+.img{
+    width: 100%;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.channel, .views{
+    font-size: small;
+    margin-bottom: 0.2em;
+}
+.views span{
+    padding: 0 0.5em;
+}
