@@ -11,7 +11,8 @@ function Video({ title, channel=" default channel", views, time, verified }) {
           alt="Alan Walker img"
         />
         <div className="title">{title}</div>
-        <div className="channel">{channel} {verified? '✅' : null}  </div>
+        {/* <div className="channel">{channel} {verified? '✅' : null}  </div> */}
+        <div className="channel">{channel} {verified && '✅'}  </div>
         <div className="views">
           {views} views <span></span>
           {time}
