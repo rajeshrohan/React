@@ -1,6 +1,7 @@
 import "./Video.css";
 
-function Video({ title, channel="channel name", views, time }) {
+function Video({ title, channel=" default channel", views, time, verified }) {
+
   return (
     <>
       <div className="container">
@@ -10,7 +11,7 @@ function Video({ title, channel="channel name", views, time }) {
           alt="Alan Walker img"
         />
         <div className="title">{title}</div>
-        <div className="channel">{channel}</div>
+        <div className="channel">{channel} {verified? '✅' : null}  </div>
         <div className="views">
           {views} views <span></span>
           {time}

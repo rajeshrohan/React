@@ -1,9 +1,9 @@
-.dark{
+/* .dark{
     display: flex;
     justify-content: center;
     background-color: grey;
     color: white;
-}
+} */
 .container{
     width: 15em;
     margin: 0 0.2em;
