@@ -1,4 +1,5 @@
 import "./App.css";
+import PlayButton from "./components/PlayButton";
 import Video from "./components/Video";
 import videos from "./data/data"
 
@@ -6,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="heading">welcome to my Youtube channel</div>
-      <div>Videos</div>
-      { videos.map(video =>
+      {videos.map(video =>
         <Video
         key = {video.id}
         id = {video.id}
@@ -19,6 +19,10 @@ function App() {
         ></Video>
         )
       }
+      <div style={{clear:'both'}}>  {/* disable float */}
+      <PlayButton onSmash={()=>console.log('success playing')}>Play</PlayButton>
+      <PlayButton onSmash={()=> alert('success paused')}>Pause</PlayButton>
+      </div>
     </div>
   );
 }
