@@ -1,7 +1,7 @@
 const videos = [
     {
       id:1,
-      title: "Alan walker 1",
+      title: "React js",
       channel: "Tseries",
       views: "30 million",
       time: "3 year ago",
@@ -9,7 +9,7 @@ const videos = [
     },
     {
       id : 2,
-      title : "Alan walker 2",
+      title : "Mongo DB",
       channel : "Tseries",
       views : "10 million",
       time : "1 year ago",
@@ -17,7 +17,7 @@ const videos = [
     },
     {
       id : 3,
-      title : "Alan walker 3",
+      title : "Express js",
       channel : "Tseries",
       views : "10 million",
       time : "1 year ago",

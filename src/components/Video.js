@@ -1,4 +1,3 @@
-import { Children } from "react";
 import "./Video.css";
 
 function Video({ id, title, channel, views, time, verified, children }) {

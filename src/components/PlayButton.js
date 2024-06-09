@@ -3,6 +3,7 @@ function PlayButton({ children, onPlay, onPause }) {
   let flag = true;
   function handleClick(e) {
     console.log(e);
+    e.stopPropagation();
     if(flag)
         onPlay();
     else
